@@ -1,0 +1,44 @@
+Document copyright © 2018 0ct0ber
+
+
+                                           Stevebending API License
+
+    This license is subject to change in newer versions of the API. Please check back then.
+
+    Definitions:
+    "the repository" - The Stevebending API GitHub repository, found here: https://github.com/0ct0ber/Stevebending-API
+    "shading" - Using software (ex: Maven-Shade-Plugin) to fill in code dependencies by copying and repackaging the
+                dependency into the exported jar
+    "the API" - The Stevebending API
+    "gameplay features" - Features that affect the gameplay for players, not just in a cosmetic or informational way
+
+
+You are hereby permitted to use the Stevebending API under the following terms and conditions below.
+
+1. Copying, redistributing, modification, regular use
+
+You may not copy or redistribute the API, except for purely the contributions you have made to the repository, or where denoted as free to copy 
+and redistribute. Redistributing includes "shading" (see definitions) jars of the API into plugins and likewise.
+
+You may only modify the contents of artifacts of the API and/or repackage it for the purposes of testing or contributing to the repository. 
+This includes changing any files in the jar.
+
+Classes are allowed to extend and override the API where normally possible without reflection. You may not use reflection or
+other means to change how the code in the API functions.
+
+2. Monetization
+
+Software (plugins, abilities, code, etc.) written that uses the API (even indirectly) may not be sold or paid for development-
+you can’t receive payment for developing the software, and you can’t pay someone else for developing it. You also are not
+allowed to charge payment for servers’ use of features in the software.
+
+You may however receive donations for your work on the software after publicly releasing it for download, if the donations are
+optional and grant nothing in return to the specific donors.
+
+3. Design & Gameplay
+
+Plugins made with the API must not restrict players from using enabled gameplay features. Any features intended to be used by
+regular players (guest, member, VIP/donor, etc) and not for testing or administration purposes must be equally available to
+all players- either all players are able to use it, or no players are able to use it. The only exceptions are restricting abilities
+to specific elements defined in the API, or if an ability has written approval from me to be an unlockable or special ability.
+This section may change in future versions of the API to be less restrictive.
