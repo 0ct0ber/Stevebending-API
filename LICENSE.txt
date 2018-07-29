@@ -3,7 +3,7 @@ Document copyright © 2018 0ct0ber
 
                                            Stevebending API License
 
-    This license is subject to change in newer versions of the API. Please check back then.
+    This license is subject to change in newer versions of the API. Please check back then as well.
 
     Definitions:
     "the repository" - The Stevebending API GitHub repository, found here: https://github.com/0ct0ber/Stevebending-API
