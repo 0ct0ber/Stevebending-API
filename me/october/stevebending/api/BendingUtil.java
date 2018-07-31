@@ -5,7 +5,7 @@
 
 package com.october.stevebending.api;
 
-public class BendingUtil {
+public abstract class BendingUtil {
 	
 	protected BendingUtil() {}
 	
