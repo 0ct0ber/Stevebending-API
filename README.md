@@ -1,3 +1,8 @@
 # Stevebending-API
 
 The API for contributing to Stevebending, a new plugin for Minecraft that lets players bend (manipulate) elements.
+
+
+### Contributing
+
+Before contributing, please read the contributor's agreement, found near the bottom of the project's license (basically terms of use). By contributing to the repository, you automatically agree to the contributor's agreement. Click [here](https://github.com/0ct0ber/Stevebending-API/blob/master/LICENSE.txt) to go to the license.
