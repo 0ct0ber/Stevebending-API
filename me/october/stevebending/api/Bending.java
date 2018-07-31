@@ -1,4 +1,4 @@
-package com.october.stevebending.api;
+package me.october.stevebending.api;
 
 /**
 *Part of Stevebending API
