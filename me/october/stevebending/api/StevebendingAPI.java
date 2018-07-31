@@ -15,7 +15,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class StevebendingAPI extends JavaPlugin {
 	
-	static Bending bending = null;
+	private static Bending bending = null;
 	
 	@Override
 	public void onEnable() {
@@ -33,6 +33,10 @@ public final class StevebendingAPI extends JavaPlugin {
 		}
 		
 		bending = new Bending(storage);
+	}
+	
+	public static final Bending getBending() {
+		return bending;
 	}
 	
 	@Override
