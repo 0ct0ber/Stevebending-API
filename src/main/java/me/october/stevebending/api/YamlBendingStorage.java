@@ -1,9 +1,9 @@
-package com.october.stevebending.api;
-
 /**
 *Part of Stevebending API
 *Project License: https://github.com/0ct0ber/Stevebending-API/blob/master/LICENSE.txt
 */
+
+package me.october.stevebending.api;
 
 
 import java.io.File;
@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import com.october.stevebending.api.Bending.BendingType;
+import me.october.stevebending.api.Bending.BendingType;
 
 /**
 *A basic YAML BendingStorage

@@ -7,13 +7,14 @@ package me.october.stevebending.api;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 
 public class Bending {
 	
-	private Map<Player, BendingType> playerdata = new HashMap<>();
+	private Map<UUID, BendingType> playerdata = new HashMap<>();
 	private BendingStorage storage;
 	
 	public enum BendingType {
@@ -29,16 +30,20 @@ public class Bending {
 	}
 	
 	public BendingType getBendingType(Player player) {
-		return playerdata.getOrDefault(player, BendingType.NONE);
+		return playerdata.getOrDefault(player.getUniqueId(), BendingType.NONE);
 	}
 	
 	public BendingType getBendingType(OfflinePlayer oplayer) {
-		if (oplayer.isOnline()) {
-			Player player = oplayer.getPlayer();
-			if (player != null) return playerdata.getOrDefault(player, BendingType.NONE);
-		}
-		
-		return storage.getBendingType(oplayer.getUniqueId());
+		return oplayer.isOnline() ? 
+		playerdata.getOrDefault(oplayer.getUniqueId(), BendingType.NONE) : storage.getBendingType(oplayer.getUniqueId());
+	}
+	
+	public void addOnline(Player player) {
+		playerdata.put(player.getUniqueId(), storage.getBendingType(player.getUniqueId()));
+	}
+	
+	public void removeOnline(Player player) {
+		playerdata.remove(player.getUniqueId());
 	}
 
 }

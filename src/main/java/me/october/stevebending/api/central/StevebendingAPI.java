@@ -1,15 +1,19 @@
-package com.october.stevebending.api;
-
 /**
 *Part of Stevebending API
 *Project License: https://github.com/0ct0ber/Stevebending-API/blob/master/LICENSE.txt
 */
+
+package me.october.stevebending.api.central;
 
 import java.io.File;
 import java.io.IOException;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import me.october.stevebending.api.Bending;
+import me.october.stevebending.api.BendingStorage;
+import me.october.stevebending.api.YamlBendingStorage;
 
 /**Main class for the plugin*/
 

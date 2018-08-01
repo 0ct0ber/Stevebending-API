@@ -1,4 +1,4 @@
-package com.october.stevebending.api;
+package me.october.stevebending.api;
 
 /**
 *Part of Stevebending API
@@ -8,7 +8,7 @@ package com.october.stevebending.api;
 
 import java.util.UUID;
 
-import com.october.stevebending.api.Bending.BendingType;
+import me.october.stevebending.api.Bending.BendingType;
 
 public interface BendingStorage {
 	

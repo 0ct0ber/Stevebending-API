@@ -3,9 +3,13 @@
 *Project License: https://github.com/0ct0ber/Stevebending-API/blob/master/LICENSE.txt
 */
 
-package com.october.stevebending.api;
+package me.october.stevebending.api;
 
-import static com.october.stevebending.api
+import org.bukkit.entity.Player;
+
+import me.october.stevebending.api.Bending.BendingType;
+import me.october.stevebending.api.central.StevebendingAPI;
+
 public abstract class BendingUtil {
 	
 	protected BendingUtil() {}

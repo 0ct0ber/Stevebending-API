@@ -1,0 +1,4 @@
+main: me.october.stevebending.api.central.StevebendingAPI
+name: Stevebending-API
+author: 0ct0ber
+version: 0.1
