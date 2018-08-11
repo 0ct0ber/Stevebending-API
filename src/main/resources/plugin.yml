@@ -1,4 +1,25 @@
 main: me.october.stevebending.api.central.StevebendingAPI
 name: Stevebending-API
 author: 0ct0ber
-version: 0.1
+version: 0.1.1
+commands:
+    fire:
+        usage: /fire
+        description: Chooses fire as your element
+        permission: stevebending.choose
+    water:
+        usage: /water
+        description: Chooses water as your element
+        permission: stevebending.choose
+    earth:
+        usage: /earth
+        description: Chooses earth as your element
+        permission: stevebending.choose
+    air:
+        usage: /air
+        description: Chooses air as your element
+        permission: stevebending.choose
+permissions:
+    stevebending.choose:
+        default: true
+        description: Lets you choose an element

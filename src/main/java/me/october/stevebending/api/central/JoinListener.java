@@ -10,8 +10,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import me.october.stevebending.api.Bending;
-
 public class JoinListener implements Listener {
 	
 	private Bending bending;

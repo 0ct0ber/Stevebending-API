@@ -9,11 +9,11 @@ import java.io.File;
 import java.io.IOException;
 
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.october.stevebending.api.Bending;
-import me.october.stevebending.api.BendingStorage;
-import me.october.stevebending.api.YamlBendingStorage;
+import me.october.stevebending.api.bendinginfo.storage.BendingStorage;
+import me.october.stevebending.api.bendinginfo.storage.YamlBendingStorage;
 
 /**Main class for the plugin*/
 
@@ -37,6 +37,16 @@ public final class StevebendingAPI extends JavaPlugin {
 		}
 		
 		bending = new Bending(storage);
+		
+		BendingCommands bc = new BendingCommands(bending, getConfig().getBoolean("allow-switch-elements"));
+		this.getCommand("fire").setExecutor(bc);
+		this.getCommand("water").setExecutor(bc);
+		this.getCommand("earth").setExecutor(bc);
+		this.getCommand("air").setExecutor(bc);
+		
+		for (Player player : Bukkit.getOnlinePlayers()) {
+			bending.addOnline(player);
+		}
 	}
 	
 	public static final Bending getBending() {
