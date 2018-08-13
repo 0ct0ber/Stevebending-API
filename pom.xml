@@ -16,7 +16,7 @@
     </plugins>
     <resources>
         <resource>
-            <directory>license</directory>
+            <directory>${project.basedir}</directory>
             <includes>
                 <include>LICENSE.txt</include>
             </includes>
